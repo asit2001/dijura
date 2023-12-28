@@ -9,7 +9,8 @@
     "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --runInBand --verbose  --forceExit",
     "dev:test": "yarn test && yarn dev",
     "build": "yarn clean && tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf ./dist",
+    "vercel-build":"yarn build"
   },
   "keywords": [],
   "author": "",
