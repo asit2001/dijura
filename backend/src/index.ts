@@ -17,7 +17,7 @@ app.use(cors({
 	origin: 'http://localhost:5173'
   }));
 app.use(cookieParser());
-app.use('/api-doc', swaggerUi.serve, swaggerUi.setup(doc,{
+app.use('/api/api-doc', swaggerUi.serve, swaggerUi.setup(doc,{
 	customCssUrl: 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.10.5/swagger-ui.min.css'
 }));
 app.use('/api/v1', router);
