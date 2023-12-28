@@ -1,0 +1,25 @@
+{
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	},
+	"compilerOptions": {
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"moduleResolution":"Node",
+		"module": "CommonJS",
+		"target": "ES2018",
+		"baseUrl": ".",
+		"paths": {
+			"@/controller/*": ["./src/api/v1/controller/*"],
+			"@/config/*": ["./src/config/*"],
+			"@/types/*": ["./src/types/*"],
+			"@/repo/*": ["./src/database/repository/*"],
+			"@/utils/*": ["./src/utils/*"],
+			"@/service/*": ["./src/database/service/*"],
+			"@/error/*": ["./src/errors/*"],
+			"@/middleware/*": ["./src/middleware/*"],
+			"@/router/*": ["./src/api/v1/routes/*"]
+		}
+	}
+}

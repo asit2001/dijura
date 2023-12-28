@@ -1,0 +1,1 @@
+export {default as transactionModal} from "@/repo/transaction/Transaction"

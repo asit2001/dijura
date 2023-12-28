@@ -1,0 +1,1 @@
+export {default as bookModel} from "@/repo/book/Book";
