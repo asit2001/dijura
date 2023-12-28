@@ -6,6 +6,7 @@ export default function BookCard({ author, name, available, imageUrl }: BookResp
 		<Card
 			renderImage={() => (
 				<img
+					alt=''
 					className='object-contain h-[200px] pt-2 object-center'
 					src={
 						imageUrl !== ''

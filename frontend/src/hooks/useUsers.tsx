@@ -1,4 +1,4 @@
-import UserService from '@/service/user.service';
+import UserService from '@/services/user.service';
 import { setProfile, setUsers } from '@/store/reducers/UserReducer';
 
 import { useEffect, useState } from 'react';
@@ -25,6 +25,7 @@ export function useUsers() {
 
 	useEffect(() => {
 		getAllUser();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return { isLoading, error };
 }
@@ -52,6 +53,7 @@ export function useProfile() {
 		if (profile.name === '') {
 			getProfile();
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return { isLoading, error };
 }

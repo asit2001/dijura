@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setFilterBook } from '@/store/reducers/BookReducer';
 import { useDebounce } from 'primereact/hooks';
 import { useEffect } from 'react';
-import LogOutBtn from '@/components/logoutBtn';
+import LogOutBtn from '@/views/components/logoutBtn';
 import { useProfile } from '@/hooks/useUsers';
 import { StoreState } from '@/store/store';
 

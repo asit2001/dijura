@@ -1,5 +1,5 @@
 import { ROUTES } from "@/config/const";
-import AuthService from "@/service/auth.service";
+import AuthService from "@/services/auth.service";
 import { Toast } from "primereact/toast";
 import { useRef } from "react";
 import { RxExit } from "react-icons/rx";

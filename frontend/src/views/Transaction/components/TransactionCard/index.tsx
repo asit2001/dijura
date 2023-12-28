@@ -9,6 +9,7 @@ export default function TransactionCard({ book, dueDate, transactionType }: Tran
 		<Card className='w-full'>
 			<div className='flex gap-3 md:gap-6'>
 				<img
+					alt=''
 					className='object-contain object-left-top md:w-[200px] md:h-[350px]'
 					src={book.imageUrl ? book.imageUrl : ''}
 				/>
@@ -45,4 +46,3 @@ export default function TransactionCard({ book, dueDate, transactionType }: Tran
 		</Card>
 	);
 }
-

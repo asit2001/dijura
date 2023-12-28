@@ -1,4 +1,4 @@
-import BookService from "@/service/book.service";
+import BookService from "@/services/book.service";
 import { setBooks } from "@/store/reducers/BookReducer";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -24,6 +24,7 @@ export function useBooks(){
 
     useEffect(()=>{
         getAllBooks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return {isLoading,error};
 }

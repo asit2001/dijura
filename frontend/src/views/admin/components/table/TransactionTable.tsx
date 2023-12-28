@@ -1,4 +1,4 @@
-import TransactionService from '@/service/transaction.service';
+import TransactionService from '@/services/transaction.service';
 import { TRANSACTION_TYPES } from '@/store/config';
 import { setAllTransactions } from '@/store/reducers/TransactionReducer';
 import { StoreState } from '@/store/store';

@@ -1,5 +1,5 @@
 import { useAuth } from '@/hooks/useAuth';
-import AuthService from '@/service/auth.service';
+import AuthService from '@/services/auth.service';
 import { LoginProps } from '@/store/types/AuthState';
 import { User } from '@/store/types/userState';
 import { ErrorMessage, Form, Formik } from 'formik';
@@ -9,7 +9,7 @@ import { useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ROUTES, USER_TYPES } from 'src/config/const';
 import { loginValidationSchema } from 'src/schema';
-import Loading from '@Loading';
+import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
 
 export default function Login() {

@@ -9,7 +9,7 @@ import { createBookValidationSchema } from 'src/schema';
 import Spinner from '../../../components/spinner/Spinner';
 import { FileUpload } from 'primereact/fileupload';
 import { Image } from 'primereact/image';
-import BookService from '@/service/book.service';
+import BookService from '@/services/book.service';
 import { Toast } from 'primereact/toast';
 import { dropDownOptions } from '@/config/const';
 import { useDispatch, useSelector } from 'react-redux';
@@ -60,7 +60,7 @@ export default function BookModal({ visible, onHide }: BookModalProps) {
 					setIsLoading(true);
 					try {
 						const { id, ...bookDetails } = values;
-						if (id != '') {
+						if (id !== '') {
 							await updateBook(id, bookDetails, file);
 						} else {
 							await createBook(bookDetails);

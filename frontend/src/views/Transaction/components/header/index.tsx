@@ -7,7 +7,7 @@ import { ROUTES } from '@/config/const';
 import { useDispatch, useSelector } from 'react-redux';
 import { useDebounce } from 'primereact/hooks';
 import { useEffect } from 'react';
-import LogOutBtn from '@/components/logoutBtn';
+import LogOutBtn from '@/views/components/logoutBtn';
 import { useProfile } from '@/hooks/useUsers';
 import { StoreState } from '@/store/store';
 import { setFilteredTransactions } from '@/store/reducers/TransactionReducer';

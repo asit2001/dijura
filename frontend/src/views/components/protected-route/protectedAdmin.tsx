@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import {useAuth} from "@/hooks/useAuth";
 import { ROUTES } from "@/config/const";
-import Loading from '@Loading';
+import Loading from '@/views/components/loading';
 
 
 type Props = {

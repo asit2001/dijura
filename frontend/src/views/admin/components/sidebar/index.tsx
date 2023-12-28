@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';
 import { setSelectedMenu } from '@/store/reducers/OtherReducer';
 import { Toast } from 'primereact/toast';
-import LogOutBtn from '@/components/logoutBtn';
+import LogOutBtn from '@/views/components/logoutBtn';
 
 interface SidebarItemProps extends Omit<HtmlHTMLAttributes<HTMLLIElement>, 'onClick'> {
 	text: string;

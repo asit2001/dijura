@@ -1,11 +1,17 @@
+
+import './global.css';
+
+import 'primereact/resources/themes/lara-light-indigo/theme.css'; // theme
+import 'primeicons/primeicons.css';
+import 'primereact/resources/primereact.css';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import PrimeReact from './PrimeReact';
 import { ROUTES } from './config/const';
 import loadable from '@loadable/component';
-import { ProtectedAdmin,ProtectedUser } from '@protectedRoute';
-import Loading from '@Loading';
+import { ProtectedAdmin,ProtectedUser } from '@/views/components/protected-route';
+import Loading from '@/views/components/loading';
 import HomePage from '@/views/home';
 import { PrimeReactProvider } from 'primereact/api';
 
@@ -24,7 +30,6 @@ const TransactionPage = loadable(()=>import('@/views/Transaction/TransactionPage
 function App() {
 	return (
 		<PrimeReactProvider value={{ripple:true}}>
-			<PrimeReact>
 			<Provider store={store}>
 				<BrowserRouter>
 					<Routes>
@@ -53,7 +58,6 @@ function App() {
 					</Routes>
 				</BrowserRouter>
 			</Provider>
-			</PrimeReact>
 		</PrimeReactProvider>
 	);
 }

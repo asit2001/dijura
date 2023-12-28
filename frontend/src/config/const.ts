@@ -1,5 +1,5 @@
-export const IS_PRODUCTION = import.meta.env.PROD
-export const BASE_URL = import.meta.env.BASE_URL
+export const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+export const BASE_URL = window.location.href
 export enum USER_TYPES {
 	USER = 'USER',
 	ADMIN = 'ADMIN',

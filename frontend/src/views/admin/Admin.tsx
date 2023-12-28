@@ -1,6 +1,6 @@
 import Header from '@/views/admin/components/header';
 import { Divider } from 'primereact/divider';
-import Center from '@/components/center';
+import Center from '@/views/components/center';
 import Sidebar from './components/sidebar';
 import {
 	BookTable,
@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';
 import { SELECTED_MENU, TRANSACTION_TYPES } from '@/store/config';
 import { useTransactions } from '@/hooks/useTransaction';
-import Loading from '@/components/loading';
+import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
 
 export default function Admin() {

@@ -3,7 +3,7 @@ import { Column } from 'primereact/column';
 import { useDispatch, useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';
 import { useUsers } from '@/hooks/useUsers';
-import Loading from '@Loading';
+import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
 import { useRef, useState } from 'react';
 import classNames from 'classnames';

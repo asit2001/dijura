@@ -1,5 +1,5 @@
 
-import TransactionService from "@/service/transaction.service";
+import TransactionService from "@/services/transaction.service";
 import { setAllTransactions, setUserTransactions } from "@/store/reducers/TransactionReducer";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -26,6 +26,7 @@ export function useTransactions(){
 
     useEffect(()=>{
         AllTransactions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return {isLoading,error};
 }
@@ -51,6 +52,7 @@ export function useUserTransactions(){
 
     useEffect(()=>{
         getUserTransactions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return {isLoading,error};
 }

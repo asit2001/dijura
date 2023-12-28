@@ -2,7 +2,7 @@ import Header from './Components/header';
 import { Divider } from 'primereact/divider';
 import BookCard from './Components/BookCard';
 import { useBooks } from '@/hooks/useBooks';
-import Loading from '@/components/loading';
+import Loading from '@/views/components/loading';
 import { useRef } from 'react';
 import { Toast } from 'primereact/toast';
 import { useSelector } from 'react-redux';

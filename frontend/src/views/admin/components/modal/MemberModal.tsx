@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 import { createTransactionValidationSchema } from 'src/schema';
 import Spinner from '../../../components/spinner/Spinner';
 
-import Transaction from '@/service/transaction.service';
+import Transaction from '@/services/transaction.service';
 import { Toast } from 'primereact/toast';
 import { useDispatch, useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';

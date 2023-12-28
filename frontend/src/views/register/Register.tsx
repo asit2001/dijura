@@ -5,10 +5,10 @@ import { Password } from 'primereact/password';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ROUTES } from 'src/config/const';
 import { signUpValidationSchema } from 'src/schema';
-import AuthService from '@/service/auth.service';
+import AuthService from '@/services/auth.service';
 import { useEffect } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import Loading from '@/components/loading';
+import Loading from '@/views/components/loading';
 
 export default function Register() {
 	const navigate = useNavigate();

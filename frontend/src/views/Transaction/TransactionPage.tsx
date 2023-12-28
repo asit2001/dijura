@@ -4,7 +4,7 @@ import TransactionCard from './components/TransactionCard';
 import { useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';
 import { useUserTransactions } from '@/hooks/useTransaction';
-import Loading from '@/components/loading';
+import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
 import { useRef } from 'react';
 

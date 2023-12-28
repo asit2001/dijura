@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import AuthService from '@/service/auth.service';
+import AuthService from '@/services/auth.service';
 import { useDispatch } from 'react-redux';
 import { setUser } from '@/store/reducers/UserReducer';
-import UserService from '@/service/user.service';
+import UserService from '@/services/user.service';
 import { USER_TYPES } from '@/config/const';
 
 export function useAuth() {
@@ -32,6 +32,7 @@ export function useAuth() {
 
 	useEffect(() => {
 		checkLoginStatus();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return { isLoggedIn, isLoading, isAdmin };

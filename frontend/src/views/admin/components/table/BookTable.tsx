@@ -4,7 +4,7 @@ import { Image } from 'primereact/image';
 import { useDispatch, useSelector } from 'react-redux';
 import { StoreState } from '@/store/store';
 import { useBooks } from '@/hooks/useBooks';
-import Loading from '@Loading';
+import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
 import { useRef, useState } from 'react';
 import { resetBookProps, setBookProps } from '@/store/reducers/BookReducer';
