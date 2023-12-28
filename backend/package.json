@@ -2,13 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "prod:start": "node dist/index.js",
-    "start": "nodemon",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
     "test": "cross-env NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --runInBand --verbose  --forceExit",
     "dev:test": "yarn test && yarn dev",
-    "prod:build": "yarn clean && tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
+    "build": "yarn clean && tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
     "clean": "rm -rf ./dist"
   },
   "keywords": [],
