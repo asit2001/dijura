@@ -68,7 +68,6 @@ export default function TransactionTable({ show, transactionTypes }: Transaction
 				<Column
 					header='Title of the book'
 					body={(transaction: Transaction) => transaction.book.name}
-					sortable
 				></Column>
 				<Column
 					header='Author'

@@ -37,12 +37,13 @@ export class TransactionController {
 				status: 200,
 				data: {
 					transactions: transactions.map(
-						({ user, book, id, dueDate, transactionType }) => ({
+						({ user, book, id, dueDate, transactionType,issueDate }) => ({
 							user,
 							book,
 							id,
 							dueDate,
 							transactionType,
+							issueDate,
 						})
 					),
 				},
@@ -76,12 +77,12 @@ export class TransactionController {
 				throw new APIError(COMMON_ERRORS.INVALID_FIELDS);
 			}
 
-			const { user, book, id, dueDate, transactionType } =
+			const { user, book, id, dueDate, transactionType,issueDate } =
 				await TransactionService.createTransaction(req.body);
 			return Respond({
 				res,
 				status: 201,
-				data: { user, book, id, dueDate, transactionType },
+				data: { user, book, id, dueDate, transactionType,issueDate },
 			});
 		} catch (err) {
 			if (err instanceof ServerError) {
@@ -97,12 +98,12 @@ export class TransactionController {
 			if (Types.ObjectId.isValid(Id) === false) {
 				throw new APIError(COMMON_ERRORS.INVALID_ID);
 			}
-			const { user, book, id, dueDate, transactionType } =
+			const { user, book, id, dueDate, transactionType,issueDate } =
 				await TransactionService.getTransactionById(new Types.ObjectId(Id));
 			return Respond({
 				res,
 				status: 201,
-				data: { user, book, id, dueDate, transactionType },
+				data: { user, book, id, dueDate, transactionType,issueDate },
 			});
 		} catch (err) {
 			if (err instanceof ServerError) {
@@ -119,12 +120,13 @@ export class TransactionController {
 				res,
 				status: 200,
 				data: { transactions: transactions.map(
-					({ user, book, id, dueDate, transactionType }) => ({
+					({ user, book, id, dueDate, transactionType,issueDate }) => ({
 						user,
 						book,
 						id,
 						dueDate,
 						transactionType,
+						issueDate
 					})
 				), },
 			});
@@ -142,12 +144,13 @@ export class TransactionController {
 				res,
 				status: 200,
 				data: { transactions:transactions.map(
-					({ user, book, id, dueDate, transactionType }) => ({
+					({ user, book, id, dueDate, transactionType,issueDate }) => ({
 						user,
 						book,
 						id,
 						dueDate,
 						transactionType,
+						issueDate
 					})
 				), },
 			});
@@ -165,12 +168,13 @@ export class TransactionController {
 				res,
 				status: 200,
 				data: { transactions:transactions.map(
-					({ user, book, id, dueDate, transactionType }) => ({
+					({ user, book, id, dueDate, transactionType,issueDate }) => ({
 						user,
 						book,
 						id,
 						dueDate,
 						transactionType,
+						issueDate
 					})
 				), },
 			});

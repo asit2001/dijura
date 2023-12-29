@@ -35,7 +35,7 @@ export default function Register() {
         return <Loading/>
     }
 	return (
-		<div className='flex justify-center items-center relative w-screen h-screen bg-cover after:absolute after:w-full after:h-screen after:bg-black after:opacity-70 after:top-0 after:left-0 bg-[url(https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&w=1600)]'>
+		<div className='flex justify-center items-center relative w-screen h-screen bg-cover after:absolute after:w-full after:h-screen after:bg-black after:opacity-70 after:top-0 after:left-0 bg-[url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg)]'>
 			<div className='flex max-w-[450px] w-full z-10 bg-white md:rounded-md h-screen md:h-[90dvh]'>
 				<Formik
 					initialValues={initialValues}

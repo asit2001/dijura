@@ -16,6 +16,7 @@ export interface Transaction {
 	book: BookResponse;
 	dueDate: Date;
 	transactionType: TRANSACTION_TYPES;
+    issueDate:Date;
 }
 export interface TransactionProps{
     id:string

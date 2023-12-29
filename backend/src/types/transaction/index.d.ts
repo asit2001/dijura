@@ -8,4 +8,5 @@ export default interface ITransaction extends Document {
 	book: IBook;
 	dueDate: Date;
 	transactionType: TRANSACTION_TYPES;
+	issueDate:Date;
 }

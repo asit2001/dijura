@@ -1691,6 +1691,10 @@
                             "type": "string",
                             "format": "date"
                           },
+                          "issueDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
                           "transactionType": {
                             "type": "string",
                             "enum": [
@@ -1894,6 +1898,10 @@
                       "type": "string",
                       "format": "date"
                     },
+                    "issueDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
                     "transactionType": {
                       "type": "string"
                     }
@@ -2021,6 +2029,10 @@
                             "type": "string"
                           },
                           "dueDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "issueDate": {
                             "type": "string",
                             "format": "date"
                           },
@@ -2168,6 +2180,10 @@
                             "type": "string",
                             "format": "date"
                           },
+                          "issueDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
                           "transactionType": {
                             "type": "string"
                           }
@@ -2309,6 +2325,10 @@
                             "type": "string"
                           },
                           "dueDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "issueDate": {
                             "type": "string",
                             "format": "date"
                           },
@@ -2459,6 +2479,10 @@
                       "type": "string"
                     },
                     "dueDate": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "issueDate": {
                       "type": "string",
                       "format": "date"
                     },

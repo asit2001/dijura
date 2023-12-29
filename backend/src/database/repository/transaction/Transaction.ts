@@ -23,6 +23,10 @@ const transactionSchema = new Schema<ITransaction>({
         type:String,
         enum:TRANSACTION_TYPES,
         required:true
+    },
+    issueDate:{
+        type:Date,
+        default:new Date()
     }
 });
 

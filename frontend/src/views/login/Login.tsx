@@ -37,7 +37,7 @@ export default function Login() {
     }
 
 	return (
-		<div className='flex justify-center items-center relative w-screen h-screen bg-cover after:absolute after:w-full after:h-screen after:bg-black after:opacity-70 after:top-0 after:left-0 bg-[url(https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&w=1600)]'>
+		<div className='flex justify-center items-center relative w-screen h-screen bg-cover after:absolute after:w-full after:h-screen after:bg-black after:opacity-70 after:top-0 after:left-0 bg-[url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg)]'>
 			<div className='flex max-w-[450px] w-full z-10 bg-white h-screen md:h-[90dvh]'>
 				<Formik
 					initialValues={initialValues}
@@ -103,14 +103,10 @@ export default function Login() {
 								component='div'
 								className='text-TlightRed'
 							/>
-							<div className='flex items-center justify-end w-full py-2 px-0'>
-								<Link className='no-underline px-2 text-Tblue' to={''}>
-									forget password?
-								</Link>
-							</div>
+							
 							<button
 								type='submit'
-								className='min-w-48 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
+								className='mt-3 min-w-48 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
 							>
 								Sign In
 							</button>

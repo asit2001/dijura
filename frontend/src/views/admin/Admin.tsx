@@ -7,7 +7,7 @@ import {
 	BorrowedBookTable,
 	MemberTable,
 	ReturnedBookTable,
-	TransactionTable,
+	AllTransactionTable,
 } from './components/table';
 import { useRef, useState } from 'react';
 import BookModal from './components/modal/BookModal';
@@ -17,6 +17,7 @@ import { SELECTED_MENU, TRANSACTION_TYPES } from '@/store/config';
 import { useTransactions } from '@/hooks/useTransaction';
 import Loading from '@/views/components/loading';
 import { Toast } from 'primereact/toast';
+
 
 export default function Admin() {
 	const menu = useSelector((state: StoreState) => state.other.selectedMenu);
@@ -51,7 +52,7 @@ export default function Admin() {
 						show={menu === SELECTED_MENU.RETURNED}
 						transactionTypes={TRANSACTION_TYPES.RETURNED}
 					/>
-					<TransactionTable show={menu === SELECTED_MENU.TRANSACTION} />
+					<AllTransactionTable show={menu === SELECTED_MENU.TRANSACTION} />
 				</div>
 			</div>
 			<BookModal onHide={() => setVisible(false)} visible={visible} />
