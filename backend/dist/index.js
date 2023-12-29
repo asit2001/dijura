@@ -19,7 +19,7 @@ exports.app.use(express_1.default.json());
 exports.app.use((0, cors_1.default)({
     exposedHeaders: ['Cookie', "Authorization"],
     credentials: true,
-    origin: 'http://localhost:5173'
+    origin: 'http://localhost:3000'
 }));
 exports.app.use((0, cookie_parser_1.default)());
 exports.app.use('/api/api-doc', swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(doc_json_1.default, {

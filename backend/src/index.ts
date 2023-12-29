@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors({
 	exposedHeaders: ['Cookie',"Authorization"],
 	credentials:true,
-	origin: 'http://localhost:5173'
+	origin: 'http://localhost:3000'
   }));
 app.use(cookieParser());
 app.use('/api/api-doc', swaggerUi.serve, swaggerUi.setup(doc,{
