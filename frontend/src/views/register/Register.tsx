@@ -58,7 +58,7 @@ export default function Register() {
 				>
 					{(props) => (
 						<Form className={'p-5 px-6 w-full'}>
-							<h2 className='pt-3 pb-2 font-medium'>Welcome to Foodie</h2>
+							<h2 className='pt-3 pb-2 font-medium'>Welcome to Library</h2>
 							<p className='pb-2 text-gray-500'>
 								sign up with email address and password
 							</p>
